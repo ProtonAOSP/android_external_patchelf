@@ -16,6 +16,7 @@
  *  along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
+#include <stddef.h>
 #include <string>
 #include <vector>
 #include <set>
@@ -268,6 +269,7 @@ static void debug(const char * format, ...)
 
 void fmt2(std::ostringstream & out)
 {
+    (void)out;
 }
 
 
