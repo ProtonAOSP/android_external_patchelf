@@ -1,0 +1,19 @@
+cc_binary {
+    name: "patchelf",
+    cflags: [
+        "-std=c++11",
+        "-DPACKAGE_NAME=\"patchelf\"",
+        "-DPACKAGE_TARNAME=\"patchelf\"",
+        "-DPACKAGE_VERSION=\"0.12\"",
+        "-DPACKAGE_STRING=\"patchelf 0.12\"",
+        "-DPACKAGE_BUGREPORT=\"\"",
+        "-DPACKAGE_URL=\"\"",
+        "-DPACKAGE=\"patchelf\"",
+        "-DVERSION=\"0.12\"",
+        "-fexceptions",
+    ],
+    srcs: [
+        "src/patchelf.cc",
+    ],
+    local_include_dirs: ["src"],
+}
